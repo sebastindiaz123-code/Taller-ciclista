@@ -17,3 +17,37 @@ Adrian Andrade
 - `Equipo`: nombre (`String`), país, lista de ciclistas y suma de tiempos de carrera en minutos (atributo **estático**).
 
 Todos los atributos son privados; los métodos de las especialidades son protegidos y los constructores llaman al de la clase padre con `super`. Las especialidades no son clases abstractas.
+
+
+Todos los atributos son privados; los métodos de las especialidades son protegidos y los constructores llaman al de la clase padre con `super`. Las especialidades no son clases abstractas.
+
+## Requisitos
+
+Java 17 o superior y Maven (solo para `mvn`).
+
+## Cómo ejecutar las pruebas unitarias
+
+```bash
+mvn test
+```
+
+## Cómo ejecutar el programa de demostración
+
+```bash
+mvn compile exec:java
+```
+
+Sin Maven:
+
+```bash
+javac -d out src/main/java/ciclismo/*.java
+java -cp out ciclismo.Main
+```
+
+## Estructura
+
+```
+src/main/java/ciclismo/   -> clases del dominio y Main
+src/test/java/ciclismo/   -> pruebas unitarias (JUnit 5)
+```
+
